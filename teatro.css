@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(82, 69, 69);
+    /*Definir a cor de fundo de um elemento*/
+}
+
+menu {
+    background-color: #534f5c;
+    padding: 10px;
+    /*Adiciona espaço ao redor do conteúdo menu*/
+    text-align: center;
+    /*Alinhamento do texto*/
+    display: flex;
+    /*Ativar o flex-box para o elemento, todos os itens dentro do elemento (filhos) se tornam flexíveis ou adaptáveis, deixando o site responsivo*/
+    justify-content: center;
+    /*alinha elementos horizontalmente*/
+    gap: 60px;
+    /*Alterações aula 26/10*/
+    position: fixed;
+    /*Fixa o elemento na ela*/
+    z-index: 2;
+    /*Faz com que o elemento fique por cima dos outros*/
+    margin-top: 100;
+    /*Posiciona o elemento à uma distância de 0px da extremidade superior da página*/
+    width: 100%;
+    top: 0%;
+}
+
+#titulo1 {
+    margin-top: 6%;
+    margin-left: 1%;
+}
+
+.menu-itens {
+    color: #ffffff;
+    /*Define a cor do texto*/
+    text-decoration: none;
+    /*Retira o traço de link da palavra*/
+    padding: 10px 20px;
+    font-size: 18px;
+    /*Define o tamanho do texto*/
+    display: inline-block;
+    /*Deixa o item como o bloco em uma linha*/
+}
+
+.menu-itens:hover {
+    /*É um evento de mouse que ocorre uma ação toda vez que colocamos o mouse em cima do elemento*/
+    background-color: #d0dbf8;
+    color: #c6bae2;
+    width: 220px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    /*Arredondar as bordas de um 
+    elemento*/
+}
+
+.caixa1 {
+    padding: 15px;
+    background-color: #df9712;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.carousel-inner {
+    position: relative;
+    /*Ao mover o elemento, ele não interfere nos outros elementos ao seu redor*/
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    /*Posiciona um elemento em relação ao elemento pai mais próximo*/
+    top: 50%;
+    /*Posiciona a 50% da altura do elemento filho*/
+    transform: translateY(-50%);
+    /*Move o elemento ao longo do eixo vertical Y*/
+    width: 5%;
+    /*Ajuste da largura das setas*/
+    z-index: 1;
+    /*Garante que fiquem sobre a imagem*/
+    background-color: rgba(0, 0, 0, 0.5);
+    /*Um fundo semi-transparente*/
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 50px;
+    color: #c5c2ca;
+    justify-items: center;
+    padding-top: 1%;
+    margin-bottom: 0%;
+}
